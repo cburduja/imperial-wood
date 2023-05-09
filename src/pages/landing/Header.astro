@@ -1,0 +1,25 @@
+---
+import Hero from '~/components/widgets/Hero.astro';
+---
+
+<Hero
+  callToAction={{ text: 'Get Quote', href: '/#contact', icon: 'tabler:download' }}
+  callToAction2={{ text: 'Learn more', href: '/#services' }}
+  image={{ src: import('~/assets/images/woodworking.png'), alt: 'AstroWind Hero Image' }}
+>
+  <Fragment slot="title">
+    <!-- <p><span class="text-accent dark:text-white highlight">Imperial Wood</span></p> -->
+    Tamplarie din lemn stratificat <br class="2xl:hidden" />
+    personalizată pentru nevoile tale.
+  </Fragment>
+
+  <Fragment slot="subtitle">
+    <span class="hidden sm:inline">
+      Utilizăm tehnologii și materiale de calitate pentru a asigura durabilitatea și funcționalitatea produselor
+      noastre.
+      <br />
+      Suntem dedicați oferirii de produse și servicii de cea mai bună calitate, satisfacția clienților fiind obiectivul nostru
+      principal.
+    </span>
+  </Fragment>
+</Hero>

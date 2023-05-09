@@ -1,0 +1,45 @@
+---
+import Steps from '~/components/widgets/Steps.astro';
+const services = [
+  {
+    title: '1. Consultanță pentru clienți',
+    description:
+      'Echipa noastră de specialiști vă stă la dispoziție pentru a vă ajuta să alegeți cea mai bună soluție pentru tamplaria din lemn stratificat aferentă nevoilor și preferințelor dvs..',
+    icon: 'gis:measure',
+  },
+  {
+    title: '2. Masuratori preliminare si personalizare',
+    description:
+      'Înainte de a începe producția, vom efectua o inspecție la locul de muncă pentru a lua măsurile exacte și a obține o imagine clară a proiectului.  In acelasi timp oferim clientilor consiliere si asistenta in alegerea materialelor, a feroneriei potrivite si a vopselei potrivite, adaptate nevoilor si gusturilor sale. ',
+    icon: 'tabler:components',
+  },
+  {
+    title: '3. Transport',
+    description: 'Livrăm tamplaria din lemn stratificat în locul dorit, în condiții de siguranță și în timp util.',
+    icon: 'mdi:truck-delivery-outline',
+  },
+  {
+    title: '4. Montaj',
+    description:
+      'Echipa noastră de specialiști va instala tamplaria din lemn stratificat, asigurându-se că totul este montat în mod corespunzător și în conformitate cu specificațiile.',
+    icon: 'carbon:tool-kit',
+  },
+  {
+    title: '5. Întreținere post-montaj:',
+    description:
+      'Pentru a vă ajuta să vă mențineți tamplaria din lemn stratificat în cea mai bună formă, vă oferim servicii de întreținere post-montaj, cum ar fi curățarea, ajustarea și reparațiile.',
+    icon: 'mdi:shield-account-variant-outline',
+  },
+];
+---
+
+<section id="services" class=" before-link">
+  <Steps
+    title="Servicii"
+    items={services}
+    image={{
+      src: import('~/assets/images/maintenance.png'),
+      alt: 'Steps image',
+    }}
+  />
+</section>

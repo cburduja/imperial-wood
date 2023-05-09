@@ -1,0 +1,93 @@
+---
+import PortofolioItem from '~/pages/landing/PortofolioItem.astro';
+
+const posts = [
+  {
+    image: '~/assets/images/woodworking.png',
+    title: 'Amenajari interioare',
+    description:
+      'Imperial Wood realizeaza urmatoarele amenajari interioare din lemn: scari interioare din lemn, diverse placari interioare incepand cu glafuri din lemn pentru geamuri, placari ornamentale, placari seminee, plinte etc.',
+    permalink: '/',
+  },
+  {
+    image: '~/assets/images/woodworking.png',
+    title: 'Amenajari exterioare',
+    description:
+      'Amenajari exterioare cum ar fi : balustrade , pergole, balcoane suspendate, foisoare, garduri etc. din cherestea de brad uscata.',
+    permalink: '/',
+  },
+  {
+    image: '~/assets/images/woodworking.png',
+    title: 'Geamuri',
+    description: 'Geamuri exterior',
+    permalink: '/',
+  },
+  {
+    image: '~/assets/images/woodworking.png',
+    title: 'Geamuri rotunde',
+    description:
+      'Imperial Wood are privilegiul de a fi printre putinele firme ce pot executa geamuri rotunde din lemn stratificat ce se deschid basculant in jurul axului(tip Velux).',
+    permalink: '/',
+  },
+  {
+    image: '~/assets/images/woodworking.png',
+    title: 'Iluminatoare',
+    description:
+      'Iluminatoare cu acoperisuri din sticla pe structura din lemn stratificat, pereti cortina, sere (placate sau nu cu aluminiu).',
+    permalink: '/',
+  },
+  {
+    image: '~/assets/images/woodworking.png',
+    title: 'Scari',
+    description:
+      'Scarile interioare realizate din esente stratificat executate de Imperial Wood pot fi gasite intr-o paleta larga de nuante si diferite grade de luciu. Executam nuante personalizate in functie de dorintele clientilor (dupa nuanta parchetului, etc). ',
+    permalink: '/',
+  },
+  {
+    image: '~/assets/images/woodworking.png',
+    title: 'Sisteme speciale',
+    description:
+      'Sisteme speciale pentru inchideri la distanta automate sau semi-automate, usi si geamuri glisante in plan paralel sau prin ridicare, sisteme de armonica, sisteme de deschidere a geamului in jurul axului (tip Velux) rectangulare sau rotunde, sisteme oscilobatante pentru arcade, triunghiuri sau trapeze.',
+    permalink: '/',
+  },
+  {
+    image: '~/assets/images/woodworking.png',
+    title: 'Sculpturi din lemn',
+    description: 'Sculpturi din lemn de orice gen dupa catalog standard sau personalizate.',
+    permalink: '/',
+  },
+  {
+    image: '~/assets/images/woodworking.png',
+    title: 'Usi beci',
+    description: 'Usi de beci sau crama din diferite esente si diferite modele cu feronerie specifica.',
+    permalink: '/',
+  },
+  {
+    image: '~/assets/images/woodworking.png',
+    title: 'Usi interior',
+    description:
+      'Usi de interior din lemn stratificat sunt tei, fag sau stejar stratificat cu o gama variata de modele sau executam usi personalizate dupa modelele clientilor.',
+    permalink: '/',
+  },
+  {
+    image: '~/assets/images/woodworking.png',
+    title: 'Usi exterior',
+    description:
+      'Modele standard pentru usi de exterior din lemn stratificat dar si cu executii personalizate dupa dorintele ce se impun.',
+    permalink: '/',
+  },
+];
+---
+
+<div class="max-w-7xl sm:mx-auto py-8 section-link" id="portofolio">
+  <div class="px-4 py-16 mx-auto max-w-6xl lg:px-8 lg:py-20">
+    <h2
+      class="text-4xl md:text-5xl font-bold leading-tighter tracking-tighter mb-4 font-heading"
+      set:html={'Portofolio'}
+    />
+
+    <div class="grid gap-6 row-gap-5 md:grid-cols-2 lg:grid-cols-4 -mb-6 py-8">
+      {posts.map((post) => <PortofolioItem post={post} />)}
+    </div>
+  </div>
+</div>

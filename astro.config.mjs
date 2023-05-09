@@ -22,8 +22,8 @@ export default defineConfig({
   site: SITE.origin,
   base: SITE.basePathname,
   trailingSlash: SITE.trailingSlash ? 'always' : 'never',
-  server:{
-	host:true
+  server: {
+    host: true,
   },
 
   output: 'static',

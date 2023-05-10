@@ -1,6 +1,25 @@
 ---
+// import defaultImage from './assets/images/default.png';
+import { Picture } from '@astrojs/image/components';
 ---
 
+<Picture
+  style="margin: -14px 0px; :is(.dark){filter:invert(1);} "
+  class="mx-auto rounded-md w-full dark:menu-logo"
+  widths={[400, 900]}
+  width={400}
+  height={224}
+  sizes="64px, 64px"
+  loading="eager"
+  src={import('~/assets/images/OIG-removebg-preview.png')}
+  alt="Imperial Wood"
+/>
+
 <span class="self-center ml-2 text-2xl md:text-xl font-bold text-gray-900 whitespace-nowrap dark:text-white">
-  🚀 Imperial Wood</span
+  Imperial Wood</span
 >
+<style is:inline is:global>
+  :is(.dark .dark\:menu-logo) {
+    filter: invert(1);
+  }
+</style>

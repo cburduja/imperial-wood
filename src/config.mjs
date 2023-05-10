@@ -8,8 +8,7 @@ const CONFIG = {
   trailingSlash: false,
 
   title: 'Imperial Wood — Tamplarie din lemn stratificat',
-  description:
-    '🚀 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs.',
+  description: 'Tamplarie din lemn stratificat personalizată pentru nevoile tale.',
   defaultImage: defaultImage,
 
   defaultTheme: 'system', // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
